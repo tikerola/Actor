@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const Card = ({ children }: Props): JSX.Element => {
-  return <CardContainer></CardContainer>;
+  return <CardContainer>{children}</CardContainer>;
 };

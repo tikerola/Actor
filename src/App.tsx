@@ -1,10 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Jackets } from "./pages/Jackets";
-import { Shirts } from "./pages/Shirts";
-import { Accessories } from "./pages/Accessories";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation } from "./components/navigation/Navigation";
 import { Home } from "./pages/Home";
+import { ProductCategory } from "./pages/productCategory/ProductCategory";
 
 export const App = (): JSX.Element => {
   return (
@@ -13,13 +11,13 @@ export const App = (): JSX.Element => {
         <Navigation />
         <Switch>
           <Route path="/jackets">
-            <Jackets />
+            <ProductCategory title="Jackets" category="jackets" />
           </Route>
           <Route path="/shirts">
-            <Shirts />
+            <ProductCategory title="Shirts" category="shirts" />
           </Route>
           <Route path="/accessories">
-            <Accessories />
+            <ProductCategory title="Accessories" category="accessories" />
           </Route>
           <Route path="/">
             <Home />

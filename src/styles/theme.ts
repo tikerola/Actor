@@ -3,7 +3,8 @@ import { DefaultTheme } from 'styled-components'
 declare module "styled-components" {
     export interface DefaultTheme {
         primaryColor: string
-        secondaryColor: string
+        secondaryColor: string,
+        titleColor: string,
         navigation: {
             height: string,
             primaryColor: string,
@@ -15,6 +16,7 @@ declare module "styled-components" {
 export const lightTheme: DefaultTheme = {
     primaryColor: '#333',
     secondaryColor: '#666',
+    titleColor: '#999',
     navigation: {
         height: '60px',
         primaryColor: '#555',
@@ -25,6 +27,7 @@ export const lightTheme: DefaultTheme = {
 export const darkTheme: DefaultTheme = {
     primaryColor: '#fff',
     secondaryColor: '#cacaca',
+    titleColor: '#999',
     navigation: {
         height: '60px',
         primaryColor: '#000',
